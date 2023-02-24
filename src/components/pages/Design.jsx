@@ -2,7 +2,7 @@ import React from "react";
 
 function Design() {
   return (
-    <div>
+    <div className="design">
       <h1>Design</h1>
     </div>
   );

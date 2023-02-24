@@ -29,6 +29,7 @@ function NavigationBar() {
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
           <span className="mht">MHT</span>HODAL
+          {/* <i className="fa fa-firstdraft" /> */}
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -44,7 +45,7 @@ function NavigationBar() {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link to="/" onClick={closeMobileMenu} className="nav-links">
+            <Link to="/service" onClick={closeMobileMenu} className="nav-links">
               Services <i className="fas fa-caret-down" />
             </Link>
             {dropDown && <DropDown />}
